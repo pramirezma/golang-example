@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "personalcluster-bdea"
+    labels:
+        app: "personalcluster-bdea"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: default-personalcluster-bdea.5afb34e389a5469088c0.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "personalcluster-bdea"
+                servicePort: 3000
