@@ -26,7 +26,7 @@ env:
   GKE_CLUSTER: test-cluster	   # TODO: update to cluster name
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: golang-example-deploy # TODO: update to deployment name
-  IMAGE: goapp-example
+  IMAGE: gcr.io/k8s-examples-316720/goapp-example
 
 jobs:
   setup-build-publish-deploy:
