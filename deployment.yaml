@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: golang
-        image: gcr.io/k8s-examples-316720/goapp-example:lattest
+        image: gcr.io/k8s-examples-316720/goapp-example:latest
         ports:
         - containerPort: 300
