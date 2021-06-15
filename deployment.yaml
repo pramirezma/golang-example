@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: golang
+  name: golang-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      deployment: hello
+      deployment: golang
   template:
     metadata:
       labels:
-        deployment: hello
+        deployment: golang
     spec:
       containers:
       - name: golang
