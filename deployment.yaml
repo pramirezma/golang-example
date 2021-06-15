@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: golang-deployment
+  name: golang
   labels:
     app: golang
 spec:
@@ -18,4 +18,4 @@ spec:
       - name: golang
         image: gcr.io/k8s-examples-316720/goapp-example:latest
         ports:
-        - containerPort: 300
+        - containerPort: 3000
