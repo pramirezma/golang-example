@@ -8,7 +8,7 @@ RUN go build -o hello
 
 FROM alpine:3.12
 
-ENV PORT=3000
+ENV PORT=8080
 
 COPY --from=build /go/src/app/hello /usr/local/bin/app 
 
