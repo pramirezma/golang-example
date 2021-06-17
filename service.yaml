@@ -11,17 +11,3 @@ spec:
     port: 80
     targetPort: 80
     protocol: TCP
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: golang-deployment
-spec:
-  type: NodePort
-  selector:
-    app: golang
-ports:  
-  port: 80
-    targetPort: 80
-    nodePort: 3000
-    protocol: TCP
