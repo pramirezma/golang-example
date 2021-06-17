@@ -24,7 +24,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      deployment: golang
+      app: golang
   template:
     metadata:
       labels:
