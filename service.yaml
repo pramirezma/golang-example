@@ -5,7 +5,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: golang
+    deployment: golang
   ports:  
   - name: http
     port: 80
