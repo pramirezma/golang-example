@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: golang-deployment
+spec:
+      containers:
+      - name: golang
+        image: gcr.io/k8s-
+      env:
+      - name: Solang
+        value: “foo:bar”
+    
