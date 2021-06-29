@@ -34,4 +34,4 @@ spec:
       - name: golang
         image: gcr.io/k8s-examples-316720/goapp-example:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 8080
